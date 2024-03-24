@@ -3,6 +3,7 @@ import {
   BoldOutlined,
   CrownOutlined,
   FireOutlined,
+  HolderOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   TrophyTwoTone,
@@ -14,13 +15,14 @@ import Excalibur from '../Excalibur';
 import Sensation from '../Sensation';
 import Barcelona from '../Barcelona';
 import Torneio from '../Torneio';
+import Inicio from '../Inicio';
 
 const { Header, Sider, Content } = Layout;
 
 
 export default function Home() {
 
-  const [selectedMenuKey, setSelectedMenuKey] = useState('1');
+  const [selectedMenuKey, setSelectedMenuKey] = useState('');
 
   const handleMenuClick = (e: any) => {
     setSelectedMenuKey(e.key); 
@@ -28,6 +30,9 @@ export default function Home() {
 
   let contentComponent;
   switch (selectedMenuKey) {
+    case '0':
+      contentComponent = <Inicio/>
+      break;
     case '1':
       contentComponent = <Excalibur/>;
       break;
@@ -41,7 +46,7 @@ export default function Home() {
       contentComponent = <Torneio/>
       break;
     default:
-      contentComponent = null;
+      contentComponent = <Inicio/>;
   }
 
   const [collapsed, setCollapsed] = useState(false);
@@ -57,7 +62,13 @@ export default function Home() {
           theme="dark"
           mode="inline"
           onClick={handleMenuClick}
+          defaultSelectedKeys={['0']}
           items={[
+            {
+              key: '0',
+              icon: <HolderOutlined />,
+              label: 'Início',
+            },
             {
               key: '1',
               icon: <CrownOutlined />,
