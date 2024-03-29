@@ -67,20 +67,20 @@ export default function Torneio() {
       title: "Clan",
       dataIndex: "equipe1",
       key: "equipe1",
-      align: "center",
+      align: "center" as const,
     },
     {
       title: "vs.",
       dataIndex: "",
       key: "versus",
-      align: "center",
+      align: "center" as const,
       render: () => "vs.",
     },
     {
       title: "Clan",
       dataIndex: "equipe2",
       key: "equipe2",
-      align: "center",
+      align: "center" as const,
     },
   ];
 
