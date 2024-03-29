@@ -5,7 +5,7 @@ export default function PageHome() {
     return (
         <>
             <Head>
-                <title>Gunz social</title>
+                <title>Flip BR</title>
                 <meta name="description" content="Gunz social" />
                 <meta
                     name="viewport"

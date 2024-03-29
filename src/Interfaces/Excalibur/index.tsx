@@ -99,7 +99,42 @@ export default function Excalibur() {
       description: '20 a 9',
       cover: 'https://r2.easyimg.io/c9yaip87u/whatsapp_image_2024-03-16_at_17.05.12.jpeg',
     },
-   
+    {
+      title: 'Excalibur x Sensation',
+      description: '20 a 13',
+      cover: 'https://r2.easyimg.io/i6wt3w8cu/whatsapp_image_2024-03-25_at_18.42.34.jpeg',
+    },
+    {
+      title: 'Excalibur x Sensation',
+      description: '20 a 16',
+      cover: 'https://r2.easyimg.io/6s2581g5c/whatsapp_image_2024-03-25_at_19.55.38.jpeg',
+    },
+    {
+      title: 'Excalibur x Sensation',
+      description: '20 a 16',
+      cover: 'https://r2.easyimg.io/4mnpu3q89/whatsapp_image_2024-03-25_at_21.22.19.jpeg',
+    },
+    {
+      title: 'Excalibur x Sensation',
+      description: '20 a 15',
+      cover: 'https://r2.easyimg.io/2vhzllomn/whatsapp_image_2024-03-26_at_20.01.08.jpeg',
+    },
+    {
+      title: 'Excalibur x Sensation',
+      description: '20 a 18',
+      cover: 'https://r2.easyimg.io/catg8a9vu/whatsapp_image_2024-03-28_at_21.47.39.jpeg',
+    },
+    {
+      title: 'Excalibur x Sensation',
+      description: '20 a 17',
+      cover: 'https://r2.easyimg.io/y0f5s6scj/whatsapp_image_2024-03-29_at_00.13.59.jpeg',
+    },
+    {
+      title: 'Excalibur x Sensation',
+      description: '20 a 16',
+      cover: 'https://r2.easyimg.io/8il1zy8nu/whatsapp_image_2024-03-29_at_01.11.22.jpeg',
+    },
+  
   ];
 
   const handleCardClick = (cover: string) => {
@@ -116,13 +151,13 @@ export default function Excalibur() {
       <h2>Histórico de vitórias</h2>
   </div>
 
-  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '10px' }}>
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))', gap: '10px' }}>
   {cardsData.map((card, index) => (
           <Card
             key={index}
             hoverable
             style={{ width: 280, background:'#dedede', margin: '10px' }}
-            cover={<img alt="example" src={card.cover} style={{ width: '100%', height: '280px', objectFit: 'cover' }} onClick={() => handleCardClick(card.cover)} />}
+            cover={<img alt="example" src={card.cover} style={{ width: '100%', height: '200px', objectFit: 'cover' }} onClick={() => handleCardClick(card.cover)} />}
           >
             <Meta title={card.title} description={card.description} />
           </Card>

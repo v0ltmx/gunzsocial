@@ -87,7 +87,7 @@ export default function Home() {
             {
               key: '4',
               icon: <TrophyTwoTone />,
-              label: 'Tournament Flip',
+              label: 'Torneio de Flip',
             }
           ]}
         />
@@ -107,7 +107,7 @@ export default function Home() {
             }}
           />
           <div>
-          <h1>Gunz social</h1>
+          <h1>Comunidade do Flip BR</h1>
           </div>
         </Header>
 
