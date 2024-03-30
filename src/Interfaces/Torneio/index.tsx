@@ -87,9 +87,9 @@ export default function Torneio() {
   return (
     <>
       <div>
-        <h2 style={{ textAlign: "center"}}>Torneio 2024.04</h2>
+        <h2 style={{ textAlign: "center" }}>Torneio 2024.04</h2>
 
-        <div style={{marginBottom:"40px"}}>
+        <div style={{ marginBottom: "40px" }}>
           <h4>Regras</h4>
           <ul>
             <li>As partidas seguem o padrão de estilo de CW.</li>
@@ -98,12 +98,31 @@ export default function Torneio() {
               Fairplay obrigatório de até 10 minutos em caso de
               Disconnect/problemas técnicos.
             </li>
-            <li>O horário dos confrontos serão combinados entre o juiz e adversários, caso não houver acordo a partida tomará W.O.</li>
-            <li>Em caso de ter TK acidental, o mesmo que matou aplica /suicide. Na situação de TK proposital, o round atual será convertido para o adversário.</li>
-            <li>Os jogos serão no servidor <i><b>Universe Gamers Gunz</b></i>.</li>
-            <li>Premiação para equipe vencedora: <i><b>R$300,00.</b></i></li>
+            <li>
+              O horário dos confrontos serão combinados entre o juiz e
+              adversários, caso não houver acordo a partida tomará W.O.
+            </li>
+            <li>
+              Em caso de ter TK acidental, o mesmo que matou aplica /suicide. Na
+              situação de TK proposital, o round atual será convertido para o
+              adversário.
+            </li>
+            <li>Não será permitido o uso de f12, em caso de <i><b>teleporte ou travamento(proposital)</b></i>, terá remake do round.</li>
+            <li>
+              Os jogos serão no servidor{" "}
+              <i>
+                <b>Universe Gamers Gunz</b>
+              </i>
+              .
+            </li>
+            <li>
+              Premiação para equipe vencedora:{" "}
+              <i>
+                <b>R$300,00.</b>
+              </i>
+            </li>
           </ul>
-          <span style={{ fontWeight: "700"}}>
+          <span style={{ fontWeight: "700" }}>
             As partidas serão transmitidas AO VIVO na <i>twitch.tv/v0ltmx</i> e
             gravadas/disponibilizadas no Youtube.
           </span>
@@ -131,7 +150,7 @@ export default function Torneio() {
         ))}
       </div>
       <div>
-        <h3 style={{ textAlign: "center", marginTop:"50px" }}>Confrontos</h3>
+        <h3 style={{ textAlign: "center", marginTop: "50px" }}>Confrontos</h3>
       </div>
       <Table columns={columns} dataSource={data} />
     </>
