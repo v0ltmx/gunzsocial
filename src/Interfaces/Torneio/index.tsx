@@ -99,7 +99,9 @@ export default function Torneio() {
               Disconnect/problemas técnicos.
             </li>
             <li>O horário dos confrontos serão combinados entre o juiz e adversários, caso não houver acordo a partida tomará W.O.</li>
-            <li>Sem TK.</li>
+            <li>Em caso de ter TK acidental, o mesmo que matou aplica /suicide. Na situação de TK proposital, o round atual será convertido para o adversário.</li>
+            <li>Os jogos serão no servidor <i><b>Universe Gamers Gunz</b></i>.</li>
+            <li>Premiação para equipe vencedora: <i><b>R$300,00.</b></i></li>
           </ul>
           <span style={{ fontWeight: "700"}}>
             As partidas serão transmitidas AO VIVO na <i>twitch.tv/v0ltmx</i> e
