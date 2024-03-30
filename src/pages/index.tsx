@@ -6,7 +6,7 @@ export default function PageHome() {
         <>
             <Head>
                 <title>Flip BR</title>
-                <meta name="description" content="Gunz social" />
+                <meta name="description" content="FlipBR" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1"

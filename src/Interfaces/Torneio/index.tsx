@@ -87,12 +87,12 @@ export default function Torneio() {
   return (
     <>
       <div>
-        <h2 style={{ textAlign: "center"}}>Torneio de Flip 2024.04</h2>
+        <h2 style={{ textAlign: "center"}}>Torneio 2024.04</h2>
 
         <div style={{marginBottom:"40px"}}>
           <h4>Regras</h4>
           <ul>
-            <li>As partidas seguem o padrão de estilo de CW flip.</li>
+            <li>As partidas seguem o padrão de estilo de CW.</li>
             <li>Não será permitido o uso de itens donate.</li>
             <li>
               Fairplay obrigatório de até 10 minutos em caso de
@@ -131,7 +131,7 @@ export default function Torneio() {
       <div>
         <h3 style={{ textAlign: "center", marginTop:"50px" }}>Confrontos</h3>
       </div>
-      <Table columns={columns} dataSource={data} />;
+      <Table columns={columns} dataSource={data} />
     </>
   );
 }
