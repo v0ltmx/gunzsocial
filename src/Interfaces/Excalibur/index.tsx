@@ -171,7 +171,7 @@ export default function Excalibur() {
         footer={null}
         width={1200}
       >
-        <img src={modalImage} alt="Imagem em tamanho maior" style={{ maxWidth: '1024px', display: 'block', margin: '0 auto' }} />
+        <img src={modalImage} alt="Imagem" style={{ maxWidth: '1024px', display: 'block', margin: '0 auto' }} />
       </Modal>
   </>;
 }

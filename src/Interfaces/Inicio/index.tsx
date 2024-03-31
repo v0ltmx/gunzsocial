@@ -35,6 +35,7 @@ export default function Inicio() {
 
   return (
     <>
+    
       {welcomeTextVisible && (
         <div
           style={{
@@ -60,7 +61,7 @@ export default function Inicio() {
       >
         <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Excalibur />)}>Excalibur</Button>
         <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Sensation />)}>Sensation</Button>
-        <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Barcelona />)}>Barcelona</Button>
+        {/* <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Barcelona />)}>Barcelona</Button> */}
         <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Torneio />)}>Torneio de Flip</Button>
       </div>
 
