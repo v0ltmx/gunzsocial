@@ -31,8 +31,8 @@ export default function Torneio() {
     },
     {
       title: "Equipe 4",
-      jogador1: "cfmatheus",
-      jogador2: "Angyy",
+      jogador1: "???",
+      jogador2: "???",
       jogador3: "Historic",
       win: <Tag color="green">WIN:</Tag>,
       lose: <Tag color="red">LOSE:</Tag>,
