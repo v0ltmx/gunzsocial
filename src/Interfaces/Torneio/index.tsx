@@ -152,7 +152,7 @@ export default function Torneio() {
         ))}
       </div>
       <div>
-        <h3 style={{ textAlign: "center", marginTop: "50px" }}>Confrontos</h3>
+        <h3 style={{ textAlign: "center", marginTop: "50px" }}>Confrontos da fase de pontos</h3>
       </div>
       <Table columns={columns} dataSource={data} />
     </>
