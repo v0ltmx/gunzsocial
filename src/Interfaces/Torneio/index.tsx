@@ -9,7 +9,7 @@ export default function Torneio() {
       jogador2: "Krustty",
       jogador3: "nothave",
       win: <Tag color="green">WIN: 2</Tag>,
-      lose: <Tag color="red">LOSE:</Tag>,
+      lose: <Tag color="red">LOSE: 0</Tag>,
       pts: <Tag>pts: 6</Tag>,
     },
     {
@@ -18,7 +18,7 @@ export default function Torneio() {
       jogador2: "HRei",
       jogador3: "KikkEr",
       win: <Tag color="green">WIN: 1</Tag>,
-      lose: <Tag color="red">LOSE:</Tag>,
+      lose: <Tag color="red">LOSE: 0</Tag>,
       pts: <Tag>pts: 3</Tag>,
     },
     {
@@ -26,7 +26,7 @@ export default function Torneio() {
       jogador1: "Person",
       jogador2: "Zarkthenberg",
       jogador3: "JuanSheik_",
-      win: <Tag color="green">WIN:</Tag>,
+      win: <Tag color="green">WIN: 0</Tag>,
       lose: <Tag color="red">LOSE: 1</Tag>,
       pts: <Tag>pts: 0</Tag>,
     },
@@ -35,8 +35,8 @@ export default function Torneio() {
       jogador1: "HuuCk",
       jogador2: "Angyy",
       jogador3: "Historic",
-      win: <Tag color="green">WIN:</Tag>,
-      lose: <Tag color="red">LOSE:</Tag>,
+      win: <Tag color="green">WIN: 0</Tag>,
+      lose: <Tag color="red">LOSE: 1</Tag>,
       pts: <Tag>pts: 0</Tag>,
     },
     {
@@ -44,9 +44,9 @@ export default function Torneio() {
       jogador1: "DODOSHOWZERO",
       jogador2: "f800cardoso",
       jogador3: "Sweatshit",
-      win: <Tag color="green">WIN:</Tag>,
+      win: <Tag color="green">WIN: 1</Tag>,
       lose: <Tag color="red">LOSE: 2</Tag>,
-      pts: <Tag>pts: 0</Tag>,
+      pts: <Tag>pts: 3</Tag>,
     },
   ];
 
@@ -56,11 +56,11 @@ export default function Torneio() {
     { key: "3", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 1</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 5</div> },
     { key: "4", equipe1: "Equipe 1", equipe2: "Equipe 4" },
     { key: "5", equipe1: "Equipe 2", equipe2: "Equipe 3" },
-    { key: "6", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 2</div>, equipe2: "Equipe 5" },
+    { key: "6", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 2</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 5</div> },
     { key: "7", equipe1: "Equipe 2", equipe2: "Equipe 4" },
     { key: "8", equipe1: "Equipe 3", equipe2: "Equipe 5" },
     { key: "9", equipe1: "Equipe 3", equipe2: "Equipe 4" },
-    { key: "10", equipe1: "Equipe 5", equipe2: "Equipe 4" },
+    { key: "10", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 5</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 4</div> },
   ];
 
   const columns = [
