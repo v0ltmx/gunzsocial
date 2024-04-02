@@ -7,9 +7,9 @@ export default function Torneio() {
       jogador1: "LucasProO",
       jogador2: "Krustty",
       jogador3: "nothave",
-      win: <Tag color="green">WIN: 1</Tag>,
+      win: <Tag color="green">WIN: 2</Tag>,
       lose: <Tag color="red">LOSE:</Tag>,
-      pts: <Tag>pts: 3</Tag>,
+      pts: <Tag>pts: 6</Tag>,
     },
     {
       title: "Equipe 2",
@@ -26,7 +26,7 @@ export default function Torneio() {
       jogador2: "Zarkthenberg",
       jogador3: "JuanSheik_",
       win: <Tag color="green">WIN:</Tag>,
-      lose: <Tag color="red">LOSE:</Tag>,
+      lose: <Tag color="red">LOSE: 1</Tag>,
       pts: <Tag>pts: 0</Tag>,
     },
     {
