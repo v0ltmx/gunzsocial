@@ -103,6 +103,7 @@ export default function Torneio() {
               O horário dos confrontos serão combinados entre o juiz e
               adversários, caso não houver acordo a partida tomará W.O.
             </li>
+            <li>Não será permitido relogar da sala para (Resetar o Frag).</li>
             <li>
               Em caso de ter TK acidental, o mesmo que matou aplica /suicide. Na
               situação de TK proposital, o round atual será convertido para o
