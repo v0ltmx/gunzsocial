@@ -56,7 +56,7 @@ export default function Torneio() {
     { key: "3", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 1</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 5</div> },
     { key: "4", equipe1: "Equipe 1", equipe2: "Equipe 4" },
     { key: "5", equipe1: "Equipe 2", equipe2: "Equipe 3" },
-    { key: "6", equipe1: <div style={{background:"green", color:"white"}}><CheckCircleFilled style={{color:"white"}} /> Equipe 2</div>, equipe2: "Equipe 5" },
+    { key: "6", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 2</div>, equipe2: "Equipe 5" },
     { key: "7", equipe1: "Equipe 2", equipe2: "Equipe 4" },
     { key: "8", equipe1: "Equipe 3", equipe2: "Equipe 5" },
     { key: "9", equipe1: "Equipe 3", equipe2: "Equipe 4" },
