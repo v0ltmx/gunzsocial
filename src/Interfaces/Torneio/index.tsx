@@ -1,7 +1,15 @@
 import { CheckCircleFilled, CloseOutlined } from "@ant-design/icons";
-import { Card, Table, Tag } from "antd";
+import { Card, Modal, Table, Tag } from "antd";
+import { useState } from "react";
 
 export default function Torneio() {
+
+  const [visible, setVisible] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+  const [carouselImages, setCarouselImages] = useState<string[]>([]);
+  const [visibleCarousel, setVisibleCarousel] = useState(false);
+
+  const { Meta } = Card;
   const cardData = [
     {
       title: "Equipe 1",
@@ -26,9 +34,9 @@ export default function Torneio() {
       jogador1: "Person",
       jogador2: "Zarkthenberg",
       jogador3: "JuanSheik_",
-      win: <Tag color="green">WIN: 0</Tag>,
+      win: <Tag color="green">WIN: 1</Tag>,
       lose: <Tag color="red">LOSE: 1</Tag>,
-      pts: <Tag>pts: 0</Tag>,
+      pts: <Tag>pts: 3</Tag>,
     },
     {
       title: "Equipe 4",
@@ -36,7 +44,7 @@ export default function Torneio() {
       jogador2: "Angyy",
       jogador3: "Historic",
       win: <Tag color="green">WIN: 0</Tag>,
-      lose: <Tag color="red">LOSE: 1</Tag>,
+      lose: <Tag color="red">LOSE: 2</Tag>,
       pts: <Tag>pts: 0</Tag>,
     },
     {
@@ -84,6 +92,45 @@ export default function Torneio() {
       align: "center" as const,
     },
   ];
+
+  const cardsData = [
+    {
+      title: "Time Lucão x Time DODO",
+      description: "20 a 12",
+      cover:
+        "https://r2.easyimg.io/d7flrkrvu/captura_de_tela_2024-04-02_às_23.33.41.png",
+    },
+    {
+      title: "Time César x Time DODO",
+      description: "20 a 19",
+      cover:
+        "https://r2.easyimg.io/4x0w5yi21/whatsapp_image_2024-04-02_at_22.46.10.jpeg",
+    },
+    {
+      title: "Time Lucão x Time Person",
+      description: "20 a 16",
+      cover:
+        "https://r2.easyimg.io/uuwngvybr/captura_de_tela_2024-04-02_às_23.40.40.png",
+    },
+    {
+      title: "Time DODO x Time Dok",
+      description: "20 a 19",
+      cover:
+        "https://r2.easyimg.io/jgydhkj9t/captura_de_tela_2024-04-02_às_23.42.45.png",
+    },
+    {
+      title: "Time Person x Time Dok",
+      description: "20 a 17",
+      cover:
+        "https://r2.easyimg.io/56slqa4j9/whatsapp_image_2024-04-02_at_23.30.45.jpeg",
+    },
+    
+  ];
+
+  const handleCardClick = (cover: string) => {
+    setModalImage(cover);
+    setVisible(true);
+  };
 
   return (
     <>
@@ -155,6 +202,50 @@ export default function Torneio() {
         <h3 style={{ textAlign: "center", marginTop: "50px" }}>Confrontos da fase de pontos</h3>
       </div>
       <Table columns={columns} dataSource={data} />
+
+      <div style={{textAlign:"center"}}>
+        <h3>Resultados das partidas</h3>
+      </div>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))",
+          gap: "10px",
+        }}
+      >
+        {cardsData.map((card, index) => (
+          <Card
+            key={index}
+            hoverable
+            style={{ width: 280, background: "#dedede", margin: "10px" }}
+            cover={
+              <img
+                alt="example"
+                src={card.cover}
+                style={{ width: "100%", height: "200px", objectFit: "cover" }}
+                onClick={() => handleCardClick(card.cover)}
+              />
+            }
+          >
+            <Meta title={card.title} description={card.description} />
+          </Card>
+        ))}
+      </div>
+
+      <Modal
+        title="Imagem da CW"
+        visible={visible}
+        onCancel={() => setVisible(false)}
+        footer={null}
+        width={1200}
+      >
+        <img
+          src={modalImage}
+          alt="Imagem"
+          style={{ maxWidth: "1024px", display: "block", margin: "0 auto" }}
+        />
+      </Modal>
     </>
   );
 }
