@@ -3,7 +3,6 @@ import { Card, Modal, Table, Tag } from "antd";
 import { useState } from "react";
 
 export default function Torneio() {
-
   const [visible, setVisible] = useState(false);
   const [modalImage, setModalImage] = useState("");
   const [carouselImages, setCarouselImages] = useState<string[]>([]);
@@ -60,15 +59,75 @@ export default function Torneio() {
 
   const data = [
     { key: "1", equipe1: <span>Equipe 1</span>, equipe2: "Equipe 2" },
-    { key: "2", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 1</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 3</div>},
-    { key: "3", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 1</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 5</div> },
+    {
+      key: "2",
+      equipe1: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 3
+        </div>
+      ),
+    },
+    {
+      key: "3",
+      equipe1: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 5
+        </div>
+      ),
+    },
     { key: "4", equipe1: "Equipe 1", equipe2: "Equipe 4" },
     { key: "5", equipe1: "Equipe 2", equipe2: "Equipe 3" },
-    { key: "6", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 2</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 5</div> },
+    {
+      key: "6",
+      equipe1: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 2
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 5
+        </div>
+      ),
+    },
     { key: "7", equipe1: "Equipe 2", equipe2: "Equipe 4" },
     { key: "8", equipe1: "Equipe 3", equipe2: "Equipe 5" },
-    { key: "9", equipe1: "Equipe 3", equipe2: "Equipe 4" },
-    { key: "10", equipe1: <div style={{background:"green", color:"white"}}>W <CheckCircleFilled style={{color:"white"}} /> Equipe 5</div>, equipe2: <div style={{background:"red", color:"white"}}><CloseOutlined  style={{color:"white"}} /> Equipe 4</div> },
+    {
+      key: "9",
+      equipe1: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 3
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 4
+        </div>
+      ),
+    },
+    {
+      key: "10",
+      equipe1: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 5
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 4
+        </div>
+      ),
+    },
   ];
 
   const columns = [
@@ -124,7 +183,6 @@ export default function Torneio() {
       cover:
         "https://r2.easyimg.io/56slqa4j9/whatsapp_image_2024-04-02_at_23.30.45.jpeg",
     },
-    
   ];
 
   const handleCardClick = (cover: string) => {
@@ -156,7 +214,13 @@ export default function Torneio() {
               situação de TK proposital, o round atual será convertido para o
               adversário.
             </li>
-            <li>Não será permitido o uso de f12, em caso de <i><b>teleporte ou travamento(proposital)</b></i>, terá remake do round.</li>
+            <li>
+              Não será permitido o uso de f12, em caso de{" "}
+              <i>
+                <b>teleporte ou travamento(proposital)</b>
+              </i>
+              , terá remake do round.
+            </li>
             <li>
               Os jogos serão no servidor{" "}
               <i>
@@ -199,11 +263,13 @@ export default function Torneio() {
         ))}
       </div>
       <div>
-        <h3 style={{ textAlign: "center", marginTop: "50px" }}>Confrontos da fase de pontos</h3>
+        <h3 style={{ textAlign: "center", marginTop: "50px" }}>
+          Confrontos da fase de pontos
+        </h3>
       </div>
       <Table columns={columns} dataSource={data} />
 
-      <div style={{textAlign:"center"}}>
+      <div style={{ textAlign: "center" }}>
         <h3>Resultados das partidas</h3>
       </div>
 
@@ -246,6 +312,20 @@ export default function Torneio() {
           style={{ maxWidth: "1024px", display: "block", margin: "0 auto" }}
         />
       </Modal>
+
+      <div>
+        <h3 style={{textAlign:"center"}}>Clipes e melhores momentos da transmissão</h3>
+      </div>
+
+      <div style={{ textAlign: "center" }}>
+
+        <iframe
+          src="https://player.twitch.tv/?video=2109052848&parent=https://flipbrasil.vercel.app/"
+          allowFullScreen={true}
+          height="378"
+          width="620"
+        ></iframe>
+      </div>
     </>
   );
 }
