@@ -16,7 +16,7 @@ export default function Torneio() {
       jogador2: "Krustty",
       jogador3: "nothave",
       win: <Tag color="green">WIN: 2</Tag>,
-      lose: <Tag color="red">LOSE: 0</Tag>,
+      lose: <Tag color="red">LOSE: 1</Tag>,
       pts: <Tag>pts: 6</Tag>,
     },
     {
@@ -24,27 +24,27 @@ export default function Torneio() {
       jogador1: "Cesar_",
       jogador2: "HRei",
       jogador3: "KikkEr",
-      win: <Tag color="green">WIN: 1</Tag>,
-      lose: <Tag color="red">LOSE: 0</Tag>,
-      pts: <Tag>pts: 3</Tag>,
+      win: <Tag color="green">WIN: 2</Tag>,
+      lose: <Tag color="red">LOSE: 1</Tag>,
+      pts: <Tag>pts: 6</Tag>,
     },
     {
       title: "Equipe 3",
       jogador1: "Person",
       jogador2: "Zarkthenberg",
       jogador3: "JuanSheik_",
-      win: <Tag color="green">WIN: 1</Tag>,
+      win: <Tag color="green">WIN: 2</Tag>,
       lose: <Tag color="red">LOSE: 1</Tag>,
-      pts: <Tag>pts: 3</Tag>,
+      pts: <Tag>pts: 6</Tag>,
     },
     {
       title: "Equipe 4",
       jogador1: "HuuCk",
       jogador2: "Angyy",
       jogador3: "Historic",
-      win: <Tag color="green">WIN: 0</Tag>,
-      lose: <Tag color="red">LOSE: 2</Tag>,
-      pts: <Tag>pts: 0</Tag>,
+      win: <Tag color="green">WIN: 1</Tag>,
+      lose: <Tag color="red">LOSE: 3</Tag>,
+      pts: <Tag>pts: 3</Tag>,
     },
     {
       title: "Equipe 5",
@@ -85,8 +85,32 @@ export default function Torneio() {
         </div>
       ),
     },
-    { key: "4", equipe1: "Equipe 1", equipe2: "Equipe 4" },
-    { key: "5", equipe1: "Equipe 2", equipe2: "Equipe 3" },
+    {
+      key: "4",
+      equipe1: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 1
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 4
+        </div>
+      ),
+    },
+    {
+      key: "5",
+      equipe1: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 2
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 3
+        </div>
+      ),
+    },
     {
       key: "6",
       equipe1: (
@@ -100,7 +124,19 @@ export default function Torneio() {
         </div>
       ),
     },
-    { key: "7", equipe1: "Equipe 2", equipe2: "Equipe 4" },
+    {
+      key: "7",
+      equipe1: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 2
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 4
+        </div>
+      ),
+    },
     { key: "8", equipe1: "Equipe 3", equipe2: "Equipe 5" },
     {
       key: "9",
@@ -314,11 +350,12 @@ export default function Torneio() {
       </Modal>
 
       <div>
-        <h3 style={{textAlign:"center"}}>Clipes e melhores momentos da transmissão</h3>
+        <h3 style={{ textAlign: "center" }}>
+          Clipes e melhores momentos da transmissão
+        </h3>
       </div>
 
       <div style={{ textAlign: "center" }}>
-
         <iframe
           src="https://player.twitch.tv/?video=2109052848&parent=https://flipbrasil.vercel.app/"
           allowFullScreen={true}
