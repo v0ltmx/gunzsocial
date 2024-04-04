@@ -323,7 +323,7 @@ export default function Torneio() {
             style={{ width: 280, background: "#dedede", margin: "10px" }}
             cover={
               <img
-                alt="example"
+                alt="imagemcw"
                 src={card.cover}
                 style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 onClick={() => handleCardClick(card.cover)}
@@ -349,7 +349,7 @@ export default function Torneio() {
         />
       </Modal>
 
-      <div>
+      {/* <div>
         <h3 style={{ textAlign: "center" }}>
           Clipes e melhores momentos da transmissão
         </h3>
@@ -362,7 +362,7 @@ export default function Torneio() {
           height="378"
           width="620"
         ></iframe>
-      </div>
+      </div> */}
     </>
   );
 }

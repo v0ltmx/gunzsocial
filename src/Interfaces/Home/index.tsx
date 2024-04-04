@@ -6,6 +6,7 @@ import {
   HolderOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
+  ProfileFilled,
   TrophyTwoTone,
 } from "@ant-design/icons";
 
@@ -16,6 +17,7 @@ import Sensation from "../Sensation";
 import Barcelona from "../Barcelona";
 import Torneio from "../Torneio";
 import Inicio from "../Inicio";
+import Players from "../Players";
 
 const { Header, Sider, Content } = Layout;
 
@@ -57,6 +59,9 @@ export default function Home() {
       break;
     case "4":
       contentComponent = <Torneio />;
+      break;
+    case "5":
+      contentComponent = <Players />;
       break;
     default:
       contentComponent = <Inicio />;
@@ -117,6 +122,11 @@ export default function Home() {
                     icon: <TrophyTwoTone />,
                     label: "Torneio de Flip",
                   },
+                  {
+                    key: "5",
+                    icon: <ProfileFilled />,
+                    label: "Players",
+                  },
                 ]}
               />
             </Drawer>
@@ -154,6 +164,11 @@ export default function Home() {
                   key: "4",
                   icon: <TrophyTwoTone />,
                   label: "Torneio de Flip",
+                },
+                {
+                  key: "5",
+                  icon: <ProfileFilled />,
+                  label: "Players",
                 },
               ]}
             />
