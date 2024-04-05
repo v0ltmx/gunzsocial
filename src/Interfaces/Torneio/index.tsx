@@ -219,6 +219,24 @@ export default function Torneio() {
       cover:
         "https://r2.easyimg.io/56slqa4j9/whatsapp_image_2024-04-02_at_23.30.45.jpeg",
     },
+    {
+      title: "Time Dok x Time Lucão",
+      description: "20 a 17",
+      cover:
+        "https://r2.easyimg.io/f5mdftu9z/whatsapp_image_2024-04-04_at_22.40.42.jpeg",
+    },
+    {
+      title: "Time Cesar x Time Dok",
+      description: "20 a 17",
+      cover:
+        "https://r2.easyimg.io/d53gjzgge/whatsapp_image_2024-04-04_at_22.38.25.jpeg",
+    },
+    {
+      title: "Time Person x Time Cesar",
+      description: "20 a 17",
+      cover:
+        "https://r2.easyimg.io/kdndqhh7i/whatsapp_image_2024-04-04_at_22.38.26.jpeg",
+    },
   ];
 
   const handleCardClick = (cover: string) => {
