@@ -4,6 +4,7 @@ import {
   CrownOutlined,
   FireOutlined,
   HolderOutlined,
+  HomeOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   ProfileFilled,
@@ -100,7 +101,7 @@ export default function Home() {
                 items={[
                   {
                     key: "0",
-                    icon: <HolderOutlined />,
+                    icon: <HomeOutlined />,
                     label: "Início",
                   },
                   {
@@ -143,7 +144,7 @@ export default function Home() {
               items={[
                 {
                   key: "0",
-                  icon: <HolderOutlined />,
+                  icon: <HomeOutlined />,
                   label: "Início",
                 },
                 {
