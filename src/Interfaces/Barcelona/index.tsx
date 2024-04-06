@@ -62,6 +62,7 @@ export default function Barcelona() {
       title: "Rank",
       dataIndex: "rank",
       key: "rank",
+      align:"center" as any,
       render: (text: any, record: any) => (
         <Tag color={mapKeyToColor(record.key)}>{text}</Tag>
       ),

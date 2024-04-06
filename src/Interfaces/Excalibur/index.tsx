@@ -65,7 +65,7 @@ export default function Excalibur() {
 
   const columns = [
     {
-      title: "Name",
+      title: "Nickname",
       dataIndex: "name",
       key: "name",
     },
@@ -73,6 +73,7 @@ export default function Excalibur() {
       title: "Rank",
       dataIndex: "rank",
       key: "rank",
+      align:"center" as any,
       render: (text: any, record: any) => (
         <Tag color={mapKeyToColor(record.key)}>{text}</Tag>
       ),

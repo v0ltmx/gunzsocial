@@ -61,7 +61,7 @@ export default function Sensation() {
 
   const columns = [
     {
-      title: "Name",
+      title: "Nickname",
       dataIndex: "name",
       key: "name",
     },
@@ -69,6 +69,7 @@ export default function Sensation() {
       title: "Rank",
       dataIndex: "rank",
       key: "rank",
+      align:"center" as any,
       render: (text: any, record: any) => (
         <Tag color={mapKeyToColor(record.key)}>{text}</Tag>
       ),
