@@ -203,7 +203,7 @@ export default function Home() {
             style={{
               margin: "10px 10px",
               padding: 10,
-              minHeight: 700,
+              minHeight: "100vh",
               background: colorBgContainer,
               borderRadius: borderRadiusLG,
             }}

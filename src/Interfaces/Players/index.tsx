@@ -136,6 +136,7 @@ export default function Players() {
       title: "",
       dataIndex: "foto",
       key: "foto",
+      align:"center" as any,
       render: () => (
         <Avatar
           size="large"
@@ -147,11 +148,13 @@ export default function Players() {
       title: "Name",
       dataIndex: "name",
       key: "name",
+      align:"center" as any,
     },
     {
       title: "Clan",
       dataIndex: "clan",
       key: "clan",
+      align:"center" as any,
       render: (text: any, record: any) => (
         <Tag color={mapKeyToColor(record.key)}>{text}</Tag>
       ),
@@ -160,6 +163,7 @@ export default function Players() {
       title: "Ação",
       dataIndex: "",
       key: "actions",
+      align:"center" as any,
       render: (_: any, record: any) => (
         <Tooltip title="Ver detalhe">
           <Button type="dashed" onClick={() => handleShowDetail(record)}>
