@@ -244,6 +244,39 @@ export default function Torneio() {
     setVisible(true);
   };
 
+  const dataScoreboard = [
+    { name: "LucasProO", KDP: "82/58/3" },
+    { name: "Krustty", KDP: "67/69/3" },
+    { name: "nothave", KDP: "43/63/3" },
+    { name: "Cesar_", KDP: "74/70/3" },
+    { name: "HRei", KDP: "66/-100(RELOGOU)" },
+    { name: "KikkEr", KDP: "56/71/3" },
+    { name: "DODOSHOWZERO", KDP: "85/62/3" },
+    { name: "f800cardoso", KDP: "44/73/3" },
+    { name: "Sweatshit", KDP: "23/-100(RELOGOU)" },
+    { name: "Person", KDP: "79/67/3" },
+    { name: "Zarkthenberg", KDP: "46/-100(RELOGOU)" },
+    { name: "JuanSheik_", KDP: "58/-100(RELOGOU)" },
+    { name: "HuuCk", KDP: "91/90/4" },
+    { name: "Historic", KDP: "105/88/4" },
+    { name: "Angyy", KDP: "79/106/4" },
+  ];
+
+  const colunasScoreboard = [
+    {
+      title: "Name",
+      dataIndex: "name",
+      key: "name",
+      align: "center" as any,
+    },
+    {
+      title: "Kill/Death/Partidas",
+      dataIndex: "KDP",
+      key: "KDP",
+      align: "center" as any,
+    },
+  ];
+
   return (
     <>
       <div>
@@ -366,6 +399,16 @@ export default function Torneio() {
           style={{ maxWidth: "1024px", display: "block", margin: "0 auto" }}
         />
       </Modal>
+
+      <div style={{ textAlign: "center", marginTop: "80px" }}>
+        <h3>Scoreboard</h3>
+      </div>
+
+      <Table
+        dataSource={dataScoreboard}
+        columns={colunasScoreboard}
+        // scroll={{ y: 440 }}
+      />
 
       {/* <div>
         <h3 style={{ textAlign: "center" }}>
