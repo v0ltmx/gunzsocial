@@ -8,6 +8,7 @@ import {
   MenuUnfoldOutlined,
   ProfileFilled,
   TrophyTwoTone,
+  UserOutlined,
 } from "@ant-design/icons";
 
 import { Layout, Menu, Button, theme, Drawer } from "antd";
@@ -124,7 +125,7 @@ export default function Home() {
                   },
                   {
                     key: "5",
-                    icon: <ProfileFilled />,
+                    icon: <UserOutlined />,
                     label: "Players",
                   },
                 ]}
@@ -167,7 +168,7 @@ export default function Home() {
                 },
                 {
                   key: "5",
-                  icon: <ProfileFilled />,
+                  icon: <UserOutlined />,
                   label: "Players",
                 },
               ]}
@@ -179,7 +180,7 @@ export default function Home() {
           <Header
             style={{
               padding: 0,
-              background: colorBgContainer,
+              background:"#142026",
               display: "flex",
               alignItems: "center",
             }}
@@ -192,10 +193,11 @@ export default function Home() {
                 fontSize: "20px",
                 width: 65,
                 height: 65,
+                color:"white"
               }}
             />
             <div>
-              <h1>Flip BR</h1>
+              <h1 style={{color:"white"}}>Flip BR</h1>
             </div>
           </Header>
 
