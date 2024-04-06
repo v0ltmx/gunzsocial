@@ -280,7 +280,7 @@ export default function Torneio() {
   return (
     <>
       <div>
-        <h2 style={{ textAlign: "center" }}>Torneio 2024.04</h2>
+        <h2 style={{ textAlign: "center" }}>Major Flip 2024.04</h2>
 
         <div style={{ marginBottom: "40px" }}>
           <h4>Regras</h4>
