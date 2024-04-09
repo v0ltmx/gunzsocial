@@ -16,7 +16,7 @@ export default function Torneio() {
       jogador2: "Krustty",
       jogador3: "nothave",
       win: <Tag color="green">WIN: 2</Tag>,
-      lose: <Tag color="red">LOSE: 1</Tag>,
+      lose: <Tag color="red">LOSE: 2</Tag>,
       pts: <Tag>pts: 6</Tag>,
     },
     {
@@ -24,18 +24,18 @@ export default function Torneio() {
       jogador1: "Cesar_",
       jogador2: "HRei",
       jogador3: "KikkEr",
-      win: <Tag color="green">WIN: 2</Tag>,
+      win: <Tag color="green">WIN: 3</Tag>,
       lose: <Tag color="red">LOSE: 1</Tag>,
-      pts: <Tag>pts: 6</Tag>,
+      pts: <Tag>pts: 9</Tag>,
     },
     {
       title: "Equipe 3",
       jogador1: "Person",
       jogador2: "Zarkthenberg",
       jogador3: "JuanSheik_",
-      win: <Tag color="green">WIN: 2</Tag>,
+      win: <Tag color="green">WIN: 3</Tag>,
       lose: <Tag color="red">LOSE: 1</Tag>,
-      pts: <Tag>pts: 6</Tag>,
+      pts: <Tag>pts: 9</Tag>,
     },
     {
       title: "Equipe 4",
@@ -52,13 +52,25 @@ export default function Torneio() {
       jogador2: "f800cardoso",
       jogador3: "Sweatshit",
       win: <Tag color="green">WIN: 1</Tag>,
-      lose: <Tag color="red">LOSE: 2</Tag>,
+      lose: <Tag color="red">LOSE: 3</Tag>,
       pts: <Tag>pts: 3</Tag>,
     },
   ];
 
   const data = [
-    { key: "1", equipe1: <span>Equipe 1</span>, equipe2: "Equipe 2" },
+    {
+      key: "1",
+      equipe1: (
+        <div style={{ background: "red", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 2
+        </div>
+      ),
+    },
     {
       key: "2",
       equipe1: (
@@ -137,7 +149,19 @@ export default function Torneio() {
         </div>
       ),
     },
-    { key: "8", equipe1: "Equipe 3", equipe2: "Equipe 5" },
+    {
+      key: "8",
+      equipe1: (
+        <div style={{ background: "green", color: "white" }}>
+          W <CheckCircleFilled style={{ color: "white" }} /> Equipe 3
+        </div>
+      ),
+      equipe2: (
+        <div style={{ background: "red", color: "white" }}>
+          <CloseOutlined style={{ color: "white" }} /> Equipe 5
+        </div>
+      ),
+    },
     {
       key: "9",
       equipe1: (
@@ -245,18 +269,18 @@ export default function Torneio() {
   };
 
   const dataScoreboard = [
-    { name: "LucasProO", KDP: "82/58/3" },
-    { name: "Krustty", KDP: "67/69/3" },
-    { name: "nothave", KDP: "43/63/3" },
-    { name: "Cesar_", KDP: "74/70/3" },
-    { name: "HRei", KDP: "66/-100(RELOGOU)" },
-    { name: "KikkEr", KDP: "56/71/3" },
-    { name: "DODOSHOWZERO", KDP: "85/62/3" },
-    { name: "f800cardoso", KDP: "44/73/3" },
-    { name: "Sweatshit", KDP: "23/-100(RELOGOU)" },
-    { name: "Person", KDP: "79/67/3" },
-    { name: "Zarkthenberg", KDP: "46/-100(RELOGOU)" },
-    { name: "JuanSheik_", KDP: "58/-100(RELOGOU)" },
+    { name: "LucasProO", KDP: "114/78/4" },
+    { name: "Krustty", KDP: "81/-100(RELOGOU)/4" },
+    { name: "nothave", KDP: "55/88/4" },
+    { name: "Cesar_", KDP: "107/88/4" },
+    { name: "HRei", KDP: "78/-100(RELOGOU)/4" },
+    { name: "KikkEr", KDP: "77/92/4" },
+    { name: "DODOSHOWZERO", KDP: "109/85/4" },
+    { name: "f800cardoso", KDP: "60/90/4" },
+    { name: "Sweatshit", KDP: "43/-100(RELOGOU)/4" },
+    { name: "Person", KDP: "103/90/4" },
+    { name: "Zarkthenberg", KDP: "73/-100(RELOGOU)" },
+    { name: "JuanSheik_", KDP: "68/-100(RELOGOU)" },
     { name: "HuuCk", KDP: "91/90/4" },
     { name: "Historic", KDP: "105/88/4" },
     { name: "Angyy", KDP: "79/106/4" },
