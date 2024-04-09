@@ -190,7 +190,81 @@ export default function Torneio() {
     },
   ];
 
+  const dataPlayoffs = [
+    {
+      key: "1",
+      equipe1: (
+        // <div style={{ background: "red", color: "white" }}>
+        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
+        // </div>
+        "Time Person"
+      ),
+      equipe2: (
+        // <div style={{ background: "green", color: "white" }}>
+        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 2
+        // </div>
+        "Time DODO"
+      ),
+    },
+    {
+      key: "2",
+      equipe1: (
+        // <div style={{ background: "green", color: "white" }}>
+        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
+        // </div>
+        "Time Cesar"
+      ),
+      equipe2: (
+        // <div style={{ background: "red", color: "white" }}>
+        //   <CloseOutlined style={{ color: "white" }} /> Equipe 3
+        // </div>
+        "Time Lucão"
+      ),
+    },   
+  ];
+
+  const dataFinal = [
+    {
+      key: "1",
+      equipe1: (
+        // <div style={{ background: "red", color: "white" }}>
+        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
+        // </div>
+        "Time ???"
+      ),
+      equipe2: (
+        // <div style={{ background: "green", color: "white" }}>
+        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 2
+        // </div>
+        "Time ???"
+      ),
+    },
+   
+  ];
+
   const columns = [
+    {
+      title: "Clan",
+      dataIndex: "equipe1",
+      key: "equipe1",
+      align: "center" as const,
+    },
+    {
+      title: "vs.",
+      dataIndex: "",
+      key: "versus",
+      align: "center" as const,
+      render: () => "vs.",
+    },
+    {
+      title: "Clan",
+      dataIndex: "equipe2",
+      key: "equipe2",
+      align: "center" as const,
+    },
+  ];
+
+  const columnsPlayoffs = [
     {
       title: "Clan",
       dataIndex: "equipe1",
@@ -446,20 +520,19 @@ export default function Torneio() {
         // scroll={{ y: 440 }}
       />
 
-      {/* <div>
-        <h3 style={{ textAlign: "center" }}>
-          Clipes e melhores momentos da transmissão
-        </h3>
+      <div style={{ textAlign: "center", marginTop: "70px" }}>
+        <h3>Semifinais</h3>
       </div>
 
-      <div style={{ textAlign: "center" }}>
-        <iframe
-          src="https://player.twitch.tv/?video=2109052848&parent=https://flipbrasil.vercel.app/"
-          allowFullScreen={true}
-          height="378"
-          width="620"
-        ></iframe>
-      </div> */}
+      <Table columns={columnsPlayoffs} dataSource={dataPlayoffs} />
+
+      <div style={{ textAlign: "center", marginTop: "70px" }}>
+        <h3>Final</h3>
+      </div>
+
+      <Table columns={columnsPlayoffs} dataSource={dataFinal} />
+
+    
     </>
   );
 }
