@@ -129,6 +129,39 @@ export default function Players() {
        
       ],
     },
+    {
+      key: "9",
+      name: "Angyy",
+      clan: "Sensation",
+      foto: "https://r2.easyimg.io/qofpaoia4/whatsapp_image_2024-04-08_at_23.54.41.jpeg",
+      conquistas: ["ESPADA QUEBRADA 2024.4"],
+      since: "2006",
+      titulos: [
+       "https://r2.easyimg.io/b1oq8p8vi/kisspng-broken-sword-5-the-serpent-s-curse-drawing-clip-a-5ae4f2d7c2f209.0634773315249538157985-removebg-preview.png"
+      ],
+    },
+    {
+      key: "10",
+      name: "Sweatshit",
+      clan: "Excalibur",
+      foto: "eae",
+      conquistas: [""],
+      since: "2016",
+      titulos: [
+       
+      ],
+    },
+    {
+      key: "11",
+      name: "JuanSheik_",
+      clan: "Barcelona",
+      foto: "eae",
+      conquistas: [""],
+      since: "2013",
+      titulos: [
+       
+      ],
+    },
   ];
 
   const columns = [
@@ -177,7 +210,7 @@ export default function Players() {
     <>
       <h2>Lista de jogadores</h2>
       <Table size="small" dataSource={dataSource} columns={columns} />
-      <Modal visible={modalVisible} onCancel={handleModalClose} footer={null} width={500}>
+      <Modal visible={modalVisible} onCancel={handleModalClose} footer={null} width={530}>
   <div style={{ display: "flex", gap: "20px" }}>
     <Avatar size={130} src={selectedItem.foto} />
     <div>
@@ -202,7 +235,7 @@ export default function Players() {
         <span>Conquistas:</span>{" "}
         <span>
           {selectedItem.conquistas.map((conquista: string, index: number) => (
-            <Tag key={index} color="orange">
+            <Tag key={index} color="red">
               {conquista}
             </Tag>
           ))}
@@ -213,7 +246,7 @@ export default function Players() {
       <div>
         <div style={{ display: "flex", gap: "5px" }}>
           {selectedItem.titulos.map((trofeu: string, index: number) => (
-            <Avatar key={index} size={64} src="https://www.hltv.org/img/static/event/trophies/2635.png" />
+            <Avatar key={index} size={64} src={trofeu} />
           ))}
         </div>
       </div>

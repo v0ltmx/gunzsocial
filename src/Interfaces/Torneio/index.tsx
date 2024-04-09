@@ -261,6 +261,18 @@ export default function Torneio() {
       cover:
         "https://r2.easyimg.io/kdndqhh7i/whatsapp_image_2024-04-04_at_22.38.26.jpeg",
     },
+    {
+      title: "Time Cesar x Time Lucão",
+      description: "20 a 15",
+      cover:
+        "https://r2.easyimg.io/z1mkta7o1/captura_de_tela_2024-04-08_às_22.29.04.png",
+    },
+    {
+      title: "Time Person x Time DODO",
+      description: "20 a 16",
+      cover:
+        "https://r2.easyimg.io/s0djsfwje/captura_de_tela_2024-04-08_às_22.30.07.png",
+    },
   ];
 
   const handleCardClick = (cover: string) => {
