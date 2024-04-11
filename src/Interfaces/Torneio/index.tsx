@@ -209,16 +209,16 @@ export default function Torneio() {
     {
       key: "2",
       equipe1: (
-        // <div style={{ background: "green", color: "white" }}>
-        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
-        // </div>
-        "Time Cesar"
+        <div style={{ background: "red", color: "white" }}>
+          0x2 <CloseOutlined style={{ color: "white" }} /> Time Cesar
+        </div>
+        
       ),
       equipe2: (
-        // <div style={{ background: "red", color: "white" }}>
-        //   <CloseOutlined style={{ color: "white" }} /> Equipe 3
-        // </div>
-        "Time Lucão"
+        <div style={{ background: "green", color: "white" }}>
+          2x0 <CheckCircleFilled style={{ color: "white" }} /> Time Lucão
+        </div>
+       
       ),
     },   
   ];
@@ -230,7 +230,7 @@ export default function Torneio() {
         // <div style={{ background: "red", color: "white" }}>
         //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
         // </div>
-        "Time ???"
+        "Time Lucão"
       ),
       equipe2: (
         // <div style={{ background: "green", color: "white" }}>
