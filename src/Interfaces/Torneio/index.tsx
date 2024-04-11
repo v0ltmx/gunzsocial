@@ -347,6 +347,18 @@ export default function Torneio() {
       cover:
         "https://r2.easyimg.io/s0djsfwje/captura_de_tela_2024-04-08_às_22.30.07.png",
     },
+    {
+      title: "SEMI FINAL - Time Lucão x Time Cesar",
+      description: "15 a 10",
+      cover:
+        "https://r2.easyimg.io/fn1iwvc92/whatsapp_image_2024-04-10_at_21.37.12.jpeg",
+    },
+    {
+      title: "SEMI FINAL - Time Lucão x Time Cesar",
+      description: "15 a 9",
+      cover:
+        "https://r2.easyimg.io/sroij984k/whatsapp_image_2024-04-10_at_21.37.12_(1).jpeg",
+    },
   ];
 
   const handleCardClick = (cover: string) => {
