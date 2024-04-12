@@ -44,17 +44,39 @@ export default function Players() {
       clan: "Excalibur",
       foto: "https://r2.easyimg.io/2n1w9loye/whatsapp_image_2024-04-05_at_00.09.40.jpeg",
       conquistas: [
-        // "3x Flip Major MVP"
+        "1x Major MVP", "1x Major Winner"
       ],
       since: "2004",
       titulos: [
-        // "https://www.hltv.org/img/static/event/trophies/2635.png",
-        // "https://www.hltv.org/img/static/event/trophies/3133.png",
+         "https://www.hltv.org/img/static/event/trophies/2635.png",
+        "https://www.hltv.org/img/static/event/mvpOld.png",
         // "https://www.hltv.org/img/static/event/trophies/3133.png",
       ],
     },
     {
       key: "2",
+      name: "Krustty",
+      clan: "Sensation",
+      foto: "https://r2.easyimg.io/azko47my8/whatsapp_image_2024-04-12_at_20.06.12.jpeg",
+      conquistas: ["1x Major Winner"],
+      since: "2015",
+      titulos: [
+        "https://www.hltv.org/img/static/event/trophies/2635.png"
+      ],
+    },
+    {
+      key: "3",
+      name: "0HM",
+      clan: "Barcelona",
+      foto: "https://r2.easyimg.io/phorg4m6k/whatsapp_image_2024-04-12_at_20.02.57.jpeg",
+      conquistas: ["1x Major Winner"],
+      since: "2005",
+      titulos: [
+        "https://www.hltv.org/img/static/event/trophies/2635.png"
+      ],
+    },
+    {
+      key: "4",
       name: "Person",
       clan: "Sensation",
       foto: "eae",
@@ -65,7 +87,7 @@ export default function Players() {
       ],
     },
     {
-      key: "3",
+      key: "5",
       name: "Cesar_",
       clan: "Sensation",
       foto: "eae",
@@ -76,7 +98,7 @@ export default function Players() {
       ],
     },
     {
-      key: "4",
+      key: "6",
       name: "DODOSHOWZERO",
       clan: "Excalibur",
       foto: "eae",
@@ -86,7 +108,7 @@ export default function Players() {
       ],
     },
     {
-      key: "5",
+      key: "7",
       name: "cfmatheus",
       clan: "Excalibur",
       foto: "eae",
@@ -97,7 +119,7 @@ export default function Players() {
       ],
     },
     {
-      key: "6",
+      key: "8",
       name: "Historic",
       clan: "Sensation",
       foto: "eae",
@@ -108,7 +130,7 @@ export default function Players() {
       ],
     },
     {
-      key: "7",
+      key: "9",
       name: "HuuCk",
       clan: "Sensation",
       foto: "eae",
@@ -119,7 +141,7 @@ export default function Players() {
       ],
     },
     {
-      key: "8",
+      key: "10",
       name: "HRei",
       clan: "Excalibur",
       foto: "eae",
@@ -130,7 +152,7 @@ export default function Players() {
       ],
     },
     {
-      key: "9",
+      key: "11",
       name: "Angyy",
       clan: "Sensation",
       foto: "https://r2.easyimg.io/qofpaoia4/whatsapp_image_2024-04-08_at_23.54.41.jpeg",
@@ -141,7 +163,7 @@ export default function Players() {
       ],
     },
     {
-      key: "10",
+      key: "12",
       name: "Sweatshit",
       clan: "Excalibur",
       foto: "eae",
@@ -152,7 +174,7 @@ export default function Players() {
       ],
     },
     {
-      key: "11",
+      key: "13",
       name: "JuanSheik_",
       clan: "Barcelona",
       foto: "eae",
@@ -235,7 +257,7 @@ export default function Players() {
         <span>Conquistas:</span>{" "}
         <span>
           {selectedItem.conquistas.map((conquista: string, index: number) => (
-            <Tag key={index} color="red">
+            <Tag key={index} color="orange">
               {conquista}
             </Tag>
           ))}

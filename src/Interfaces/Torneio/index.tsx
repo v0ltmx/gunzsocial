@@ -225,16 +225,14 @@ export default function Torneio() {
     {
       key: "1",
       equipe1: (
-        // <div style={{ background: "red", color: "white" }}>
-        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 1
-        // </div>
-        "Time Lucão"
+        <div style={{ background: "green", color: "white" }}>
+          2x0 <CheckCircleFilled style={{ color: "white" }} /> Time Lucão
+        </div>
       ),
       equipe2: (
-        // <div style={{ background: "green", color: "white" }}>
-        //   W <CheckCircleFilled style={{ color: "white" }} /> Equipe 2
-        // </div>
-        "Time Dodo"
+        <div style={{ background: "red", color: "white" }}>
+          0x2 <CloseOutlined style={{ color: "white" }} /> Time DODO
+        </div>
       ),
     },
    
