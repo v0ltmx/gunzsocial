@@ -88,12 +88,11 @@ export default function Inicio() {
       <div style={{marginTop:"30px", display:"flex", alignContent:"center", justifyContent:"center"}}>
         <iframe
           src="https://xat.com/FlipBrasil"
-          // width="100%"
-          width="500"
+          width="100%"
           height="700"
           frameBorder="0"
           scrolling="auto"
-          // allowFullScreen
+          allowFullScreen
         ></iframe>
       </div>
     </>
