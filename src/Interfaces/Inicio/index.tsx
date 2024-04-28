@@ -7,7 +7,6 @@ import Torneio from "../Torneio";
 import { useEffect, useState } from "react";
 
 export default function Inicio() {
-
   const [showComponent, setShowComponent] = useState(null);
   const [welcomeTextVisible, setWelcomeTextVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
@@ -22,27 +21,24 @@ export default function Inicio() {
       setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); 
+    handleResize();
 
-    window.addEventListener('resize', handleResize); 
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize); 
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  
-
   return (
     <>
-    
       {welcomeTextVisible && (
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            marginBottom: "20px", 
+            marginBottom: "20px"
           }}
         >
           <h2>Bem-vindos</h2>
@@ -52,25 +48,53 @@ export default function Inicio() {
 
       <div
         style={{
-          display: isMobile? "grid" : "flex",
-          flexDirection: isMobile ? "column" : "row", 
-          gap: isMobile ? "15px" : "30px", 
+          display: isMobile ? "grid" : "flex",
+          flexDirection: isMobile ? "column" : "row",
+          gap: isMobile ? "15px" : "30px",
           // alignItems: isMobile? "none" : "center",
-          justifyContent: isMobile? "none" : "center",
+          justifyContent: isMobile ? "none" : "center",
         }}
       >
-        <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Excalibur />)}>Excalibur</Button>
-        <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Sensation />)}>Sensation</Button>
+        <Button
+          type="dashed"
+          size={isMobile ? "middle" : "large"}
+          onClick={() => handleMenuButtonClick(<Excalibur />)}
+        >
+          Excalibur
+        </Button>
+        <Button
+          type="dashed"
+          size={isMobile ? "middle" : "large"}
+          onClick={() => handleMenuButtonClick(<Sensation />)}
+        >
+          Sensation
+        </Button>
         {/* <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Barcelona />)}>Barcelona</Button> */}
-        <Button type="dashed" size={isMobile? "middle" : "large"} onClick={() => handleMenuButtonClick(<Torneio />)}>Torneio de Flip</Button>
+        <Button
+          type="dashed"
+          size={isMobile ? "middle" : "large"}
+          onClick={() => handleMenuButtonClick(<Torneio />)}
+        >
+          Torneio de Flip
+        </Button>
       </div>
 
       <div>
         {showComponent && (
-          <div style={{ marginTop: '40px'}}>
-            {showComponent}
-          </div>
+          <div style={{ marginTop: "40px" }}>{showComponent}</div>
         )}
+      </div>
+
+      <div style={{marginTop:"30px", display:"flex", alignContent:"center", justifyContent:"center"}}>
+        <iframe
+          src="https://xat.com/FlipBrasil"
+          // width="100%"
+          width="500"
+          height="700"
+          frameBorder="0"
+          scrolling="auto"
+          // allowFullScreen
+        ></iframe>
       </div>
     </>
   );
